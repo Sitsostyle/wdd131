@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Sitso Ashiadey - Personal homepage with navigation, cards, and dynamic JS dates.">
+    <meta name="author" content="Sitso Ashiadey">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="course">WDD 131: Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">I-learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Sitso Ashiadey</h1>
+
+    <main>
+        <section class="card">
+            <h2>About me</h2>
+            <div class="content">
+                <div class="text">
+                    <p>My name is Sitso Ashiadey. I am from Accra, Ghana and currently studying
+                        Web Development at Brigham Young University-Idaho. I enjoy learning
+                        HTML, CSS, JavaScript, and database design. I especially like building websites and designing
+                        fashion garments and accessories.
+                    </p>
+
+                    <h3>Accra, Ghana</h3>
+                    <p><img src="images/ghana.jpg" alt="Official flag of Ghana" class="flag"> Official flag of Ghana</p>
+                    <p>Ghana is located in West Africa. It is known for its friendly people, rich culture, beautiful
+                        beaches, and historical landmarks.</p>
+                </div>
+                <img src="images/profile.jpg" alt="Portrait of Sitso Ashiadey" class="profile">
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                <li><a href="https://placeholder.com/" target="_blank">Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌿 Sitso Ashiadey 🌿 Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

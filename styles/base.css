@@ -1,0 +1,203 @@
+/* ==========================================================================
+   Global Reset & Variables
+   ========================================================================== */
+:root {
+    --primary-color: #1b4965;
+    --secondary-color: #62b6cb;
+    --accent-color: #f77f00;
+    --background-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #2b2d42;
+    --light-text: #ffffff;
+    --border-radius: 8px;
+    --font-heading: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-heading);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+}
+
+#course {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+nav {
+    background-color: #0f2c3f;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: block;
+    color: var(--light-text);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 400;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* ==========================================================================
+   Main Content Layout
+   ========================================================================== */
+h1 {
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+/* ==========================================================================
+   Cards
+   ========================================================================== */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 0.75rem 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.card .content {
+    padding: 1.25rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.card .text {
+    flex: 1;
+}
+
+.card h3 {
+    margin: 1rem 0 0.5rem;
+    color: var(--primary-color);
+}
+
+/* Images inside Cards */
+.profile {
+    width: 150px;
+    height: auto;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flag {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+/* Resource List in Second Card */
+.card ul {
+    padding: 1.25rem 2rem;
+    list-style-type: disc;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+}
+
+.card li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.card li a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+#lastModified {
+    color: #ffeb3b;
+}
+
+/* ==========================================================================
+   Responsive Design (Mobile View)
+   ========================================================================== */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .card .content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .profile {
+        width: 100%;
+        max-width: 200px;
+    }
+}
