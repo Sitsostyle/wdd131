@@ -1,2 +1,2 @@
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
+document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
