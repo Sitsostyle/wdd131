@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakum National Park - Ghana</title>
+    <meta name="description"
+        content="Explore Kakum National Park in Ghana: canopy walkway, rainforest wildlife, and local weather details.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Kakum National Park</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 650px)" srcset="images/hero-large.webp.jpg">
+                <img src="images/hero-small.webp.jpg" alt="Kakum National Park Canopy Walkway through tropical rainforest"
+                    width="500" height="300">
+            </picture>
+        </div>
+
+        <section class="data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><span class="label">Location:</span> Central Region, Ghana</li>
+                <li><span class="label">Established:</span> 1992</li>
+                <li><span class="label">Area:</span> 375 sq km</li>
+                <li><span class="label">Elevation:</span> 135–250 m</li>
+                <li><span class="label">Key Feature:</span> Canopy Walkway</li>
+                <li><span class="label">Habitat:</span> Tropical Rainforest</li>
+                <li><span class="label">Main River:</span> Kakum River</li>
+                <li><span class="label">Time Zone:</span> GMT</li>
+            </ul>
+        </section>
+
+        <section class="weather-card">
+            <h2 class="weather-heading">Weather</h2>
+            <img src="images/weather-icon.svg" alt="Cloudy weather icon" class="mobile-weather-icon">
+            <ul>
+                <li><span class="label">Temperature:</span> <span id="temp">28</span>°C</li>
+                <li><span class="label">Conditions:</span> Humid & Tropical</li>
+                <li><span class="label">Wind:</span> <span id="wind">12</span> km/h</li>
+                <li><span class="label">Wind Chill:</span> <span id="chill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>🌿 Sitso Ashiadey 🌿| Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
