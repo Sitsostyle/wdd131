@@ -1,0 +1,144 @@
+/* CSS Reset & Setup */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Mobile Menu */
+header {
+    background-color: #002e5d;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+#menu {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #002e5d;
+    text-align: center;
+}
+
+nav ul.open {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #0056b3;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    width: 100%;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #002e5d;
+}
+
+/* Responsive Grid */
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Temple Cards */
+.res-grid section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.res-grid h3 {
+    color: #002e5d;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #002e5d;
+    padding-bottom: 0.25rem;
+}
+
+.res-grid p {
+    font-size: 0.95rem;
+    margin: 0.25rem 0;
+    color: #555;
+}
+
+.res-grid .label {
+    font-weight: bold;
+    color: #002e5d;
+}
+
+.res-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-top: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+    background-color: #002e5d;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}

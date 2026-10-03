@@ -1,0 +1,40 @@
+@media screen and (min-width: 37.5em) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        flex-direction: row;
+        padding: 1rem 2rem;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        gap: 1.5rem;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    .res-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+    }
+
+    .res-grid section img {
+        height: 220px;
+        transition: transform 0.3s ease;
+    }
+
+    .res-grid section:hover img {
+        transform: scale(1.02);
+    }
+}
