@@ -1,0 +1,62 @@
+/* Page Setup */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+/* Table Container & Borders */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Caption (Requirement) */
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #555555;
+    font-style: italic;
+}
+
+/* Header Cells (Requirement: thead) */
+thead th {
+    background-color: #006b3f;
+    /* Ghana Green */
+    color: #ffffff;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+/* Body Cells (Requirement: tbody) */
+tbody td {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    font-size: 1.1rem;
+}
+
+/* Feature Labels Column */
+tbody td:first-child {
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px;
+}
+
+/* Zebra Striping (Requirement: nth-child) */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background-color: #e8f5e9;
+}

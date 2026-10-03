@@ -1,0 +1,50 @@
+/* Page Setup */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    /* Black background for the fade effect */
+    color: #ffffff;
+}
+
+main {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+/* Requirement: Single centered column using display: block */
+img {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    height: auto;
+
+    /* Requirement: Fade-from-black animation */
+    animation: fadeFromBlack 1.5s ease-in-out;
+}
+
+/* Animation Keyframes */
+@keyframes fadeFromBlack {
+    0% {
+        opacity: 0;
+        background-color: #000000;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #111111;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
