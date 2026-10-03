@@ -1,0 +1,46 @@
+```css @media (min-width: 900px) {
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        margin: 0;
+        text-align: left;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        margin: 0;
+        gap: 0.5rem;
+    }
+
+    .navigation a {
+        padding: 0.6rem 1rem;
+    }
+
+    .album {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    main h2 {
+        font-size: 2.5rem;
+    }
+}
+
+```
