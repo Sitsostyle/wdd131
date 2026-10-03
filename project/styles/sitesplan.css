@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #0d233a;
+    --accent-color: #d4af37;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #222222;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 5px solid var(--accent-color);
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-weight: 300;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.3rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.color-box {
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.color-box.primary {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.color-box.accent {
+    background-color: var(--accent-color);
+    color: #000000;
+}
+
+.color-box.background {
+    background-color: #e9ecef;
+    color: #222222;
+    border: 1px solid #ccc;
+}
+
+.wireframe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.wireframe-box {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+    background: #fafafa;
+}
+
+.wireframe-placeholder {
+    border: 2px dashed var(--primary-color);
+    padding: 1rem;
+    background: #ffffff;
+    text-align: center;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin-top: 2rem;
+}
