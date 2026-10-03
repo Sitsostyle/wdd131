@@ -43,7 +43,7 @@ main {
 }
 
 section {
-    background: var(--card-bg);
+    background-color: var(--card-bg);
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border-radius: 8px;
@@ -91,7 +91,7 @@ li {
 .color-box.background {
     background-color: #e9ecef;
     color: #222222;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
 }
 
 .wireframe-container {
@@ -101,18 +101,18 @@ li {
 }
 
 .wireframe-box {
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 6px;
     padding: 1rem;
-    background: #fafafa;
+    background-color: #fafafa;
 }
 
 .wireframe-placeholder {
     border: 2px dashed var(--primary-color);
     padding: 1rem;
-    background: #ffffff;
+    background-color: #ffffff;
     text-align: center;
-    color: #555;
+    color: #555555;
     font-size: 0.9rem;
 }
 
