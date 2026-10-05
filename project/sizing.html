@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive measurement converter and custom garment commission cost estimator.">
+    <meta name="author" content="Sitso Ashiadey">
+    <title>Sitsostyle Atelier | Fit Assistant & Estimator</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Sitsostyle Atelier</h1>
+        <p>Fit Assistant & Cost Calculation Logic</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sizing.html" class="active">Sizing & Estimator</a>
+        <a href="order.html">Commission Request</a>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h2>Measurement Unit Converter</h2>
+            <div class="form-group">
+                <label for="unitSelect">Select Preferred Unit:</label>
+                <select id="unitSelect">
+                    <option value="inches">Inches (in)</option>
+                    <option value="cm">Centimeters (cm)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="measureValue">Enter Value:</label>
+                <input type="number" id="measureValue" placeholder="e.g. 36" min="1" step="0.1">
+            </div>
+            <button id="convertBtn">Convert Measurement</button>
+            <div id="conversionResult" class="result-box">Converted value will display here.</div>
+        </section>
+
+        <section class="card" style="margin-top: 2rem;">
+            <h2>Commission Cost Estimator</h2>
+            <form id="estimatorForm">
+                <div class="form-group">
+                    <label for="garmentType">Garment Type:</label>
+                    <select id="garmentType" required>
+                        <option value="">-- Choose Garment --</option>
+                        <option value="jacket">Custom Tailored Jacket ($120 base)</option>
+                        <option value="trousers">Cargo / Formal Trousers ($80 base)</option>
+                        <option value="suit">2-Piece Bespoke Suit ($220 base)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fabricTier">Fabric Tier:</label>
+                    <select id="fabricTier" required>
+                        <option value="standard">Standard Cotton / Drill (1.0x)</option>
+                        <option value="premium">Premium Wool / Linen Blend (1.4x)</option>
+                        <option value="luxury">Luxury Cashmere / Silk (1.8x)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" value="1" min="1" max="100" required>
+                </div>
+                <button type="submit">Calculate Quote Estimate</button>
+            </form>
+            <div id="quoteResult" class="result-box">Enter options above to generate a dynamic quote.</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026🌿 Sitso Ashiadey 🌿| BYU-Idaho | WDD 131</p>
+        <p><a href="references.html">Page References</a> | <a href="siteplan.html">Site Plan</a></p>
+    </footer>
+
+    <script src="scripts/estimator.js" defer></script>
+</body>
+
+</html>

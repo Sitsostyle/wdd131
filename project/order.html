@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Submit custom garment commission details and size measurements directly to Sitsostyle Atelier.">
+    <meta name="author" content="Sitso Ashiadey">
+    <title>Sitsostyle Atelier | Custom Commission Request</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Sitsostyle Atelier</h1>
+        <p>Commission Request Form</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sizing.html">Sizing & Estimator</a>
+        <a href="order.html" class="active">Commission Request</a>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h2>Submit Garment Specifications</h2>
+            <form id="commissionForm" action="order.html" method="get">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Sitso Ashiadey">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="client@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="chest">Chest/Bust Measurement (in or cm):</label>
+                    <input type="number" id="chest" name="chest" min="10" max="200" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="waist">Waist Measurement (in or cm):</label>
+                    <input type="number" id="waist" name="waist" min="10" max="200" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Design Details & Reflective Tape Options:</label>
+                    <textarea id="details" name="details" rows="4"
+                        placeholder="Describe specific customization preferences, garment colors, or reflective detailing..."></textarea>
+                </div>
+
+                <button type="submit">Submit Request</button>
+            </form>
+            <div id="formFeedback" class="result-box" style="display: none;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026🌿 Sitso Ashiadey 🌿| BYU-Idaho | WDD 131</p>
+        <p><a href="references.html">Page References</a> | <a href="siteplan.html">Site Plan</a></p>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+</body>
+
+</html>
